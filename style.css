@@ -35,7 +35,7 @@ body {
     font-family: var(--ff-accent);
     font-weight: var(--fw-bold);
     color: var(--very-dark-blue);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1em;
     letter-spacing: -0.006em;
 }
@@ -43,7 +43,7 @@ body {
 .text {
     font-family: var(--ff-base);
     font-weight: var(--fw-regular);
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.643em;
     color: var(--dark-grayish-blue);
 }
@@ -117,6 +117,10 @@ body {
     height: 16px;
 }
 
+.card-btn:hover {
+    background-color: hsl(158, 36%, 20%);
+}
+
 /* FOOTER */
 /* TODO: to be modified */
 .attribution { 
@@ -127,4 +131,29 @@ body {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 600px) {
+    .product-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        --content-padding: 2rem;
+    }
+
+    .card-subtitle {
+        margin-bottom: 1.125rem;
+    }
+
+    .card-title {
+        margin-bottom: 1.5rem;
+    }
+
+    .card-text {
+        margin-bottom: 1.875rem;
+    }
+
+    .price-container {
+        margin-bottom: 1.75rem;
+    }
 }
