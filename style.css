@@ -122,11 +122,13 @@ body {
 }
 
 /* FOOTER */
-/* TODO: to be modified */
 .attribution { 
-    display: none;
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    color: var(--dark-grayish-blue);
+    position: absolute;
+    left: calc(50% - 140px);
+    bottom: 16px; 
 }
 
 .attribution a { 
